@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ body {
+    min-height: 100vh;
+    padding-bottom: 20px;
+ }
+.header-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.left-side {
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.right-side a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    margin-left: 40px;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    
+}
+
+.right-side a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: lightseagreen;
+    transition: .2s;
+}
+
+.right-side a:hover::before {
+    width: 100%;
+}
+
+.welcome {
+    margin-top: 150px;
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+    align-items: center;
+    background: linear-gradient(90deg, white 15%, rgb(214, 241, 249) 75%);
+    
+}
+
+
+.button-container {
+    padding-top: 20px;
+}
+
+button {
+    background-color: lightseagreen;
+    padding: 20px 36px;
+    display: inline-block;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.welcome h1 {
+    padding-bottom: 9px;
+}
+
+.welcome img {
+    width: 50%;
+    min-width: 400px;
+    border-radius: 10px;
+}
+
+
+button:hover {
+    background-color: rgb(48, 168, 162);
+}
+
+@media screen and (max-width: 860px){
+    .header-container {
+        padding: 20px 30px;
+    }
+
+    .welcome {
+        flex-direction: column;
+        padding: 20px 60px;
+        justify-content: left;
+    }
+
+    .welcome img {
+        margin-top: 20px;
+        border-radius: 10px;
+        margin-right: auto;
+    }
+    
+    .introduction {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .header-container {
+        padding: 20px 30px;
+    }
+
+    .welcome {
+        flex-direction: column;
+        padding: 20px 30px;
+        justify-content: left;
+    }
+
+    .welcome img {
+        margin-top: 20px;
+        border-radius: 10px;
+        margin-right: auto;
+    }
+    
+    .introduction {
+        margin-right: auto;
+    }
+}
+
+.pic-wrapper h2 {
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+
+.pic-wrapper {
+    padding: 20px 150px;
+    text-align: center;
+    height: 100%;
+    margin-top: 120px;
+
+}
+
+.animal-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.animal-cards {
+    width: 490px;
+}
+
+.animal-cards > p {
+    padding-top: 6px;
+}
+
+.pictures {
+    width: 490px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.quote-wrapper {
+    margin-top: 160px;
+    background-color: rgba(237, 237, 237, 0.713);
+    padding: 100px 60px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.quote {
+    text-align: right;
+    font-size: 28px;
+    color: rgb(116, 116, 116);
+}
+
+
+.action-wrapper {
+    margin-top: 150px;
+    padding: 20px 150px;
+}
+
+.signup-container {
+    background-color: rgb(181, 253, 144);
+    width: 100%;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 95px;
+}
+
+.action-text {
+    font-size: 20px;
+    color: rgb(20, 42, 61);
+}
+
+
+@media screen and (max-width: 1360px) {
+    .signup-container {
+        padding: 20px 60px;
+        column-gap: 20px;
+    }
+
+    .end-button {
+        padding: 15px 10px;
+        width: 150px;
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 970px) {
+    .signup-container {
+        padding: 20px 60px;
+        column-gap: 20px;
+    }
+
+    .action-text {
+        font-size: 17px;
+    }
+
+}
+
+
+@media screen and (max-width: 830px) {
+    .action-wrapper {
+        padding: 20px 60px;
+    }
+    .signup-container {
+        padding: 20px 60px;
+    }
+
+    .action-text {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .action-wrapper {
+        padding: 20px 60px;
+    }
+    .signup-container {
+        padding: 20px 60px;
+        display: block;
+    }
+    .end-button {
+        margin-top: 12px;
+    }
+
+    .action-text {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .action-wrapper {
+        padding: 20px 30px;
+    }
+    .signup-container {
+        padding: 20px 60px;
+        display: block;
+    }
+    .end-button {
+        margin-top: 7px;
+    }
+
+    .action-text {
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1840px) {
+    .animal-cards {
+        width: 400px;
+    }
+    
+    .pictures {
+        width: 400px;
+        height: 490px;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1570px) {
+    .animal-cards {
+        width: 360px;
+    }
+    
+    .pictures {
+        width: 360px;
+        height: 450px;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1450px) {
+    .animal-cards {
+        width: 320px;
+    }
+    
+    .pictures {
+        width: 320px;
+        height: 410px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .animal-cards {
+        width: 290px;
+    }
+    
+    .pictures {
+        width: 290px;
+        height: 370px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    .animal-cards {
+        width: 270px;
+    }
+    
+    .pictures {
+        width: 270px;
+        height: 330px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1175px) {
+    .animal-cards {
+        width: 240px;
+    }
+    
+    .pictures {
+        width: 240px;
+        height: 300px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .animal-cards {
+        width: 100%;
+    }
+    
+    .pictures {
+        width: 100%;
+        height: 710px;
+        border-radius: 10px;
+        object-fit: fill;
+    }
+
+    .animal-container {
+        flex-direction: column;
+        row-gap: 70px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .animal-cards {
+        width: 600px;
+    }
+    
+    .pictures {
+        width: 600px;
+        height: 690px;
+        border-radius: 10px;
+    }
+
+    .animal-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+    .animal-cards {
+        width: 610px;
+    }
+    
+    .pictures {
+        width: 610px;
+        height: 700px;
+        border-radius: 10px;
+    }
+
+    .pic-wrapper {
+        padding: 20px 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 850px) {
+    .animal-cards {
+        width: 600px;
+    }
+    
+    .pictures {
+        width: 600px;
+        height: 690px;
+        border-radius: 10px;
+    }
+
+    .pic-wrapper {
+        padding: 20px 50px;
+    }
+
+}
+
+@media screen and (max-width: 815px) {
+    .animal-cards {
+        width: 600px;
+    }
+    
+    .pictures {
+        width: 600px;
+        height: 690px;
+        border-radius: 10px;
+    }
+
+    .pic-wrapper {
+        padding: 20px 50px;
+    }
+
+}
+
+@media screen and (max-width: 725px) {
+    .animal-cards {
+        width: 585px;
+    }
+    
+    .pictures {
+        width: 585px;
+        height: 675px;
+        border-radius: 10px;
+    }
+
+    .pic-wrapper {
+        padding: 20px 50px;
+    }
+    
+
+}
+
+@media screen and (max-width: 685px) {
+    .animal-cards {
+        width: 500px;
+    }
+    
+    .pictures {
+        width: 500px;
+        height: 590px;
+        border-radius: 10px;
+    }
+
+    .pic-wrapper {
+        padding: 20px 50px;
+    }
+    
+
+}
+
+@media screen and (max-width: 630px) {
+    .animal-cards {
+        width: 425px;
+    }
+    
+    .pictures {
+        width: 425px;
+        height: 515px;
+        border-radius: 10px;
+    }
+
+    .pic-wrapper {
+        padding: 20px 30px;
+    }
+    
+
+}
+
